@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.eatfit.activity.Settings">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolBarStyle_primary">
+
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_5"
+                android:text="@string/settings"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_22"
+                android:visibility="gone" />
+
+
+        </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10">
+
+        <RelativeLayout
+            android:id="@+id/settingsPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/settingsIcon"
+                android:layout_width="@dimen/dp_45"
+                android:layout_height="@dimen/dp_45"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/settings" />
+
+            <TextView
+                android:id="@+id/settingsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settingsIcon"
+                android:layout_marginTop="@dimen/dp_5"
+                android:paddingLeft="@dimen/dp_5"
+                android:text="@string/settings"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_22"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.SwitchCompat
+                style="@style/MySwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settingsTitle"
+                android:layout_marginTop="@dimen/dp_18"
+                android:checked="true"
+                android:paddingLeft="@dimen/dp_5"
+                android:text="@string/turnOffnotif"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_18"
+                android:theme="@style/MySwitch" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/settingsPanel"
+            android:layout_marginTop="@dimen/dp_22">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/editprofile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:drawableLeft="@mipmap/edit_profile"
+                    android:drawablePadding="@dimen/dp_25"
+                    android:drawableRight="@mipmap/forward_icon"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/editprofile"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/personalInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editprofile"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:drawableLeft="@mipmap/personal_info"
+                    android:drawablePadding="@dimen/dp_25"
+                    android:drawableRight="@mipmap/forward_icon"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/personalInfo"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_16" />
+
+
+                <TextView
+                    android:id="@+id/changePass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/personalInfo"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:drawableLeft="@mipmap/change_password"
+                    android:drawablePadding="@dimen/dp_25"
+                    android:drawableRight="@mipmap/forward_icon"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/changepass"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/faq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/changePass"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:drawableLeft="@mipmap/faq"
+                    android:drawablePadding="@dimen/dp_25"
+                    android:drawableRight="@mipmap/forward_icon"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/faqs"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/termsCondition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/faq"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:drawableLeft="@mipmap/terms_and_condition"
+                    android:drawablePadding="@dimen/dp_25"
+                    android:drawableRight="@mipmap/forward_icon"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/termscondition"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/aboutus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/termsCondition"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:drawableLeft="@mipmap/about"
+                    android:drawablePadding="@dimen/dp_25"
+                    android:drawableRight="@mipmap/forward_icon"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/aboutUs"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/checkUpdates"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/aboutus"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:drawableLeft="@mipmap/check"
+                    android:drawablePadding="@dimen/dp_25"
+                    android:drawableRight="@mipmap/forward_icon"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/checkUpdates"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/inviteFriends"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/checkUpdates"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:drawableLeft="@mipmap/invite"
+                    android:drawablePadding="@dimen/dp_25"
+                    android:drawableRight="@mipmap/forward_icon"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/inviteFriends"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/myRewards"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/inviteFriends"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:drawableLeft="@mipmap/rewards"
+                    android:drawablePadding="@dimen/dp_25"
+                    android:drawableRight="@mipmap/forward_icon"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/myRewards"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/myRewards"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:drawableLeft="@mipmap/logout"
+                    android:drawablePadding="@dimen/dp_25"
+                    android:drawableRight="@mipmap/forward_icon"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/logout"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_16" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

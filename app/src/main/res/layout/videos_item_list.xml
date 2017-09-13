@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_90"
+    android:background="@color/dullBlack"
+    android:paddingLeft="@dimen/dp_5"
+    android:paddingRight="@dimen/dp_5"
+    android:paddingTop="@dimen/dp_10">
+
+    <ImageView
+        android:id="@+id/videoItemImage"
+        android:layout_width="@dimen/dp_70"
+        android:layout_height="@dimen/dp_70"
+        android:scaleType="fitXY"
+        android:src="@mipmap/header_bg_02" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/playButton"
+        android:layout_toRightOf="@+id/videoItemImage"
+        android:paddingLeft="@dimen/dp_5"
+        android:paddingRight="@dimen/dp_5">
+
+        <TextView
+            android:id="@+id/videoTitleItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/signup_textColor"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/videoSubTitleItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/videoTitleItem"
+            android:layout_marginTop="@dimen/dp_7.5"
+            android:text=""
+            android:textColor="@color/signup_textColor"
+            android:textSize="@dimen/sp_14" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/playButton"
+        android:layout_width="@dimen/dp_45"
+        android:layout_height="@dimen/dp_45"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_5"
+        android:src="@mipmap/video" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_alignParentBottom="true"
+        android:background="@color/signup_textColor" />
+
+</RelativeLayout>

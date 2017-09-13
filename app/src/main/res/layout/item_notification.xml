@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dp_5"
+    android:paddingTop="@dimen/dp_5">
+
+    <ImageView
+        android:id="@+id/imageviewIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/food1"/>
+
+    <TextView
+        android:id="@+id/timeNotify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageviewIcon"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_10"
+        android:padding="@dimen/dp_2.5"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_13"/>
+
+    <TextView
+        android:id="@+id/textNotify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_2"
+        android:layout_toRightOf="@+id/imageviewIcon"
+        android:padding="@dimen/dp_3"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_16"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_below="@+id/imageviewIcon"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@color/colorBlack"/>
+
+</RelativeLayout>

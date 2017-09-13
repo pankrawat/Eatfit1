@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bingoscreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_02"
+    tools:context="com.eatfit.activity.BingoScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/dp_100"
+            android:layout_marginLeft="@dimen/dp_55"
+            android:layout_marginRight="@dimen/dp_55"
+            android:layout_marginTop="@dimen/dp_75"
+            app:cardCornerRadius="@dimen/dp_12"
+            app:cardElevation="@dimen/dp_2">
+
+            <RelativeLayout
+                android:id="@+id/bingoCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/bingolin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/imageLay"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".6">
+
+                        <ImageView
+                            android:id="@+id/imageBg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@mipmap/img_"
+                            android:cropToPadding="true"
+                            android:padding="@dimen/dp_12"
+                            android:scaleType="fitXY" />
+
+                        <TextView
+                            android:id="@+id/textBingo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/textBingo2"
+                            android:paddingLeft="@dimen/dp_20"
+                            android:text="Bingo"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/sp_22" />
+
+                        <TextView
+                            android:id="@+id/textBingo2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imageBg"
+                            android:paddingBottom="@dimen/dp_7.5"
+                            android:paddingLeft="@dimen/dp_20"
+                            android:text="You are All Set"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/sp_18" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/calculateLay"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".4">
+
+                        <TextView
+                            android:id="@+id/calculateText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|left"
+                            android:paddingBottom="@dimen/dp_15"
+                            android:paddingLeft="@dimen/dp_20"
+                            android:paddingTop="@dimen/dp_15"
+                            android:text="Calculate the right amount of calories for yourself, enter your personal information to get the best diet plan."
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/sp_16" />
+
+                        <TextView
+                            android:id="@+id/calculate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/calculateText"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:drawableRight="@mipmap/arrow_"
+                            android:paddingBottom="@dimen/dp_7.5"
+                            android:paddingLeft="@dimen/dp_20"
+                            android:paddingRight="@dimen/dp_20"
+                            android:text="Calculate Now"
+                            android:textAllCaps="true"
+                            android:textColor="@color/login_bg"
+                            android:textSize="@dimen/sp_18" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/upperTriangle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/dp_7.5"
+        android:layout_marginTop="@dimen/dp_7.5"
+        android:background="@drawable/uppertriangle" />
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolBarStyle_primary">
+
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/dp_5"
+                android:text="@string/termsCondition"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp_22"
+                android:visibility="gone" />
+
+
+        </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/upperPanelFeed"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_2.5"
+    android:layout_marginTop="@dimen/dp_3"
+    android:paddingLeft="@dimen/dp_7.5"
+    android:paddingRight="@dimen/dp_7.5">
+
+    <com.eatfit.helper.CircleImageView
+        android:id="@+id/userFollowersImage"
+        android:layout_width="@dimen/dp_45"
+        android:layout_height="@dimen/dp_45"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/profile_blue"
+        app:civ_border_color="@color/bluebg"
+        app:civ_border_overlay="false"
+        app:civ_border_width="@dimen/dp_1" />
+
+    <RelativeLayout
+        android:id="@+id/textLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_7.5"
+        android:layout_toRightOf="@+id/userFollowersImage"
+        android:padding="@dimen/dp_2">
+
+        <TextView
+            android:id="@+id/userFollowersName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:maxLines="1"
+            android:text="sdgsadgdg"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_16" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/userFollowersImage"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_toRightOf="@+id/userFollowersImage"
+        android:background="@color/signup_textColor" />
+
+</RelativeLayout>

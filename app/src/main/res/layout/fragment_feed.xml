@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.eatfit.fragments.FeedFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <RelativeLayout
+        android:id="@+id/upperPanel"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@mipmap/header_bg_01"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/upperPanel">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                                            android:id="@+id/postCard"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="@dimen/dp_7.5"
+                                            android:layout_marginTop="@dimen/dp_5"
+                                            app:cardElevation="@dimen/dp_1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/upperPanelFeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:paddingLeft="@dimen/dp_7.5"
+                    android:paddingRight="@dimen/dp_7.5"
+                    android:paddingTop="@dimen/dp_5"
+                    android:weightSum="3">
+
+                    <com.eatfit.helper.CircleImageView
+                        android:id="@+id/userPostImage"
+                        android:layout_width="@dimen/dp_55"
+                        android:layout_height="@dimen/dp_55"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_7.5"
+                        android:src="@mipmap/profile_blue"
+                        app:civ_border_overlay="true"
+                        app:civ_border_width="0dp"/>
+
+                    <android.support.v4.widget.Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"/>
+
+                    <EditText
+                        android:id="@+id/userPost"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+                        android:gravity="top"
+                        android:hint="What's on your mind Write here, share"
+                        android:maxLines="4"
+                        android:minLines="2"
+                        android:padding="@dimen/dp_1"
+                        android:textSize="14sp"/>
+
+                    <android.support.v4.widget.Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".2"/>
+
+                    <TextView
+                        android:id="@+id/postBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_weight=".6"
+                        android:background="@drawable/bg_follow"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/dp_7.5"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingRight="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_7.5"
+                        android:text="@string/post"
+                        android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/feedList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/postCard"
+            android:layout_margin="@dimen/dp_2.5"
+            app:layoutManager="LinearLayoutManager"
+            app:stackFromEnd="true">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,328 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.eatfit.fragments.ProfileFragment">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <RelativeLayout
+        android:id="@+id/headerImageLay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_220">
+
+        <ImageView
+            android:id="@+id/headerImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@mipmap/header_bg_02"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/headerImages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@mipmap/profile_header"
+            android:scaleType="fitXY"/>
+
+        <com.eatfit.helper.CircleImageView
+            android:id="@+id/profilePic"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_75"
+            android:src="@mipmap/default_images"
+            app:civ_border_overlay="true"
+            app:civ_border_width="0dp"/>
+
+        <TextView
+            android:id="@+id/nameUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profilePic"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:text="Loreum Ipsum"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_12"/>
+
+        <TextView
+            android:id="@+id/descriptionUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameUser"
+            android:gravity="center_horizontal|center"
+            android:maxLines="2"
+            android:text="Loreum Ipsum bla bla\nbalsadadadamdadmad"
+            android:textColor="@color/login_textColor"
+            android:textSize="@dimen/sp_10"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerImageLay"
+        android:background="@color/colorWhite"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/calorieIntakeLay"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_60"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_22"
+                android:background="@drawable/profile_pic_bg">
+
+                <TextView
+                    android:id="@+id/calorieText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="1400"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_18"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/calorieIntaktext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/calorieIntakeLay"
+                android:layout_marginTop="@dimen/dp_7.5"
+                android:gravity="center_horizontal"
+                android:text="@string/calorieIntake"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"/>
+
+            <TextView
+                android:id="@+id/calorietext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/calorieIntaktext"
+                android:gravity="center_horizontal"
+                android:text="Intake :"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/calorietext"
+                android:layout_marginTop="@dimen/dp_30"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="@dimen/dp_2.5"
+                    android:layout_marginRight="@dimen/dp_2.5"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <RelativeLayout
+                        android:id="@+id/nutritionLay"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp_110"
+                        android:layout_margin="@dimen/dp_5"
+                        android:layout_weight="1"
+                        android:background="@drawable/profile_rect_bg">
+
+                        <ImageView
+                            android:id="@+id/nutritionImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/nutritionText"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/dp_10"
+                            android:src="@mipmap/nutrition_profile"/>
+
+                        <TextView
+                            android:id="@+id/nutritionText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="@dimen/dp_20"
+                            android:gravity="center_horizontal"
+                            android:maxLines="2"
+                            android:text="@string/myNutrition"
+                            android:textColor="@color/black"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/workoutsLay"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp_110"
+                        android:layout_margin="@dimen/dp_5"
+                        android:layout_weight="1"
+                        android:background="@drawable/profile_rect_bg">
+
+                        <ImageView
+                            android:id="@+id/workoutsImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/workoutsText"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/dp_10"
+                            android:src="@mipmap/workout_profile"/>
+
+                        <TextView
+                            android:id="@+id/workoutsText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="@dimen/dp_20"
+                            android:gravity="center_horizontal"
+                            android:maxLines="2"
+                            android:text="@string/myWorkouts"
+                            android:textColor="@color/black"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/regimenLay"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp_110"
+                        android:layout_margin="@dimen/dp_5"
+                        android:layout_weight="1"
+                        android:background="@drawable/profile_rect_bg">
+
+                        <ImageView
+                            android:id="@+id/regimenImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/regimenText"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/dp_10"
+                            android:src="@mipmap/regimen_profile"/>
+
+                        <TextView
+                            android:id="@+id/regimenText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="@dimen/dp_20"
+                            android:gravity="center_horizontal"
+                            android:maxLines="2"
+                            android:text="@string/myReg"
+                            android:textColor="@color/black"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/followersLay"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp_110"
+                        android:layout_margin="@dimen/dp_5"
+                        android:layout_weight="1"
+                        android:background="@drawable/profile_rect_bg">
+
+                        <ImageView
+                            android:id="@+id/FollowersImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/FollowersText"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/dp_10"
+                            android:src="@mipmap/followers"/>
+
+                        <TextView
+                            android:id="@+id/FollowersText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="@dimen/dp_10"
+                            android:gravity="center_horizontal"
+                            android:maxLines="2"
+                            android:text="@string/Followers"
+                            android:textColor="@color/black"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rewardsLay"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp_110"
+                        android:layout_margin="@dimen/dp_5"
+                        android:layout_weight="1"
+                        android:background="@drawable/profile_rect_bg">
+
+                        <ImageView
+                            android:id="@+id/rewardsImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/rewardsText"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/dp_10"
+                            android:src="@mipmap/rewards"/>
+
+                        <TextView
+                            android:id="@+id/rewardsText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="@dimen/dp_10"
+                            android:gravity="center_horizontal"
+                            android:maxLines="2"
+                            android:text="@string/myRew"
+                            android:textColor="@color/black"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/settingsLay"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp_110"
+                        android:layout_margin="@dimen/dp_5"
+                        android:layout_weight="1"
+                        android:background="@drawable/profile_rect_bg">
+
+                        <ImageView
+                            android:id="@+id/settingsImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/settingsText"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/dp_10"
+                            android:src="@mipmap/setting_profile"/>
+
+                        <TextView
+                            android:id="@+id/settingsText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="@dimen/dp_10"
+                            android:gravity="center_horizontal"
+                            android:maxLines="2"
+                            android:text="@string/set"
+                            android:textColor="@color/black"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

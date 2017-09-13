@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#407ee5</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="login_bg">#2788f0</color>
+    <color name="fblogin_bg">#355c95</color>
+    <color name="glogin_bg">#e85147</color>
+    <color name="login_textColor">#9c9c9c</color>
+    <color name="signup_textColor">#b1b1b1</color>
+    <color name="hintColor">#aeaeae</color>
+    <color name="triangle">#c93f5be7</color>
+
+    <color name="femaleColor">#8a5cd2</color>
+    <color name="maleColor">#2788f0</color>
+
+    <color name="bluebg">#407ee5</color>
+    <color name="trianglebg">#bf166bed</color>
+    <color name="black">#212121</color>
+    <color name="dullBlack">#161616</color>
+    <color name="lightBlack">#111111</color>
+    <color name="pink">#f61f58</color>
+    <color name="greenbg">#5bd982</color>
+    <color name="purple_bg">#8a56d8</color>
+
+    <color name="protein_bg">#f4989d</color>
+    <color name="fat_bg">#625f7e</color>
+    <color name="carbohydrate_bg">#8cedaf</color>
+
+
+    <!--Calendar View COlor Codes-->
+    <color name="today">#4b82ff</color>
+    <color name="greyed_out">#c7c7c7</color>
+
+    <color name="summer">#44eebd82</color>
+    <color name="fall">#44d8d27e</color>
+    <color name="winter">#44a1c1da</color>
+    <color name="spring">#448da64b</color>
+
+
+</resources>

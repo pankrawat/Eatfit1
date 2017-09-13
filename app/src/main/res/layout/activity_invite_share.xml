@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_invite"
+    tools:context="com.eatfit.activity.InviteShare">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/socialLay"
+        android:layout_marginBottom="@dimen/dp_50"
+        android:padding="@dimen/dp_7.5"
+        android:text="@string/shares"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_40" />
+
+    <LinearLayout
+        android:id="@+id/socialLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/facebookLay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="@dimen/dp_5">
+
+            <ImageView
+                android:id="@+id/fbImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_7.5"
+                android:src="@mipmap/facebook" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fbImage"
+                android:layout_centerHorizontal="true"
+                android:text="@string/facebook"
+                android:textColor="@color/com_facebook_blue" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/messagesLay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="@dimen/dp_5">
+
+            <ImageView
+                android:id="@+id/messages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_7.5"
+                android:src="@mipmap/message" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/messages"
+                android:layout_centerHorizontal="true"
+                android:text="@string/messages"
+                android:textColor="@color/greenbg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/whatsappLay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="@dimen/dp_5">
+
+            <ImageView
+                android:id="@+id/whatsappImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_7.5"
+                android:src="@mipmap/whatsapp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/whatsappImage"
+                android:layout_centerHorizontal="true"
+                android:text="@string/whatsapp"
+                android:textColor="@color/greenbg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/googleLay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="@dimen/dp_5">
+
+            <ImageView
+                android:id="@+id/googleImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_7.5"
+                android:src="@mipmap/google_plus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/googleImage"
+                android:layout_centerHorizontal="true"
+                android:text="@string/googlePlus"
+                android:textColor="@color/glogin_bg" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

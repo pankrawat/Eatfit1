@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">EatFit</string>
+
+    <string name="facebook_app_id">1732471057044012</string>
+
+    <!--TODO Activity Label-->
+    <string name="login">Log In</string>
+    <string name="aboutUs">About Us</string>
+    <string name="faqs">FAQ\'s</string>
+    <string name="signUp">Sign Up</string>
+    <string name="profileEdit">Edit Profile</string>
+    <string name="passwordReset">Reset Password</string>
+    <string name="termsCondition">Terms &amp; Conditions</string>
+    <string name="termscondition">Terms and Conditions</string>
+
+
+    <!--Static Data of the APP-->
+    <string name="chooseImage">Choose Image</string>
+    <string name="cancel">Cancel</string>
+    <string name="click">Click a Pic</string>
+    <string name="termsCondtn">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="logintext">Already have an account? <a href="login">Log In</a></string>
+    <string name="reset">Reset</string>
+    <string name="loginNow">Log in now</string>
+    <string name="personalInf">Personal <![CDATA[<b><font color="#407ee5">Information</font></b>]]></string>
+    <string name="calorie">Get Calories Count</string>
+    <string name="socialLoginText">Log In with <![CDATA[<font color="#355c95">Facebook</font>]]> or <![CDATA[<font color="#e85147">Gmail</font>]]></string>
+    <string name="submit">Submit</string>
+    <string name="resetInfoText">Enter your <![CDATA[<font color="#2788f0">Phone Number</font>]]> to get &lt;br /&gt;the OTP.</string>
+    <string name="resetOtpText">Enter the <![CDATA[<font color="#2788f0">OTP</font>]]> in the space provided&lt;br /&gt; and click continue to reset.</string>
+    <string name="infoReset">Reset Information</string>
+    <string name="otp">OTP</string>
+    <string name="settings">Settings</string>
+    <string name="turnOffnotif">Turn Off Notification</string>
+    <string name="editprofile">Edit Profile</string>
+    <string name="changepass">Change Password</string>
+    <string name="checkUpdates">Check for Updates</string>
+    <string name="logout">Logout</string>
+    <string name="myRewards">My Rewards</string>
+    <string name="inviteFriends">Invite Friends</string>
+    <string name="personal">Personal</string>
+    <string name="info">Information</string>
+    <string name="profile">Profile</string>
+    <string name="reg">Regimen\n</string>
+    <string name="regimen">Regimen</string>
+    <string name="workouts">Workouts</string>
+    <string name="nutrition">Nutrition</string>
+    <string name="set">Settings\n</string>
+    <string name="feed">Feed</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="calorieIntake">Calorie Intake</string>
+    <string name="favourites">Favourites</string>
+    <string name="Followers">Followers &amp;\nFollowing</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="myNutrition">My Nutrition</string>
+    <string name="myReg">My Regimen</string>
+    <string name="myRew">My Rewards\n</string>
+    <string name="myWorkouts">My Workouts</string>
+    <string name="addMealPlan">Add to my meal plan</string>
+    <string name="protein">Protein</string>
+    <string name="fat">Fat</string>
+    <string name="carbohydrate">Carbohydrate</string>
+    <string name="desciption">Description</string>
+    <string name="veg">Veg</string>
+    <string name="nonveg">Non-Veg</string>
+    <string name="calorieCount">Calorie Count</string>
+    <string name="videos">Videos</string>
+    <string name="exercise">Exercise</string>
+    <string name="like">Likes</string>
+    <string name="likes">Like</string>
+    <string name="share">Share</string>
+    <string name="Add">Add</string>
+    <string name="next">Next</string>
+    <string name="shareOutside">Share outside app</string>
+    <string name="sharewithin">Share inside app</string>
+    <string name="shared">Share Videos</string>
+    <string name="follow">+ Follow</string>
+    <string name="follows">Following</string>
+    <string name="commment">Comment</string>
+    <string name="post">Post</string>
+    <string name="follower">Followers</string>
+    <string name="following">Following</string>
+    <string name="comments">Comments</string>
+    <string name="personalInfo">Personal Information</string>
+    <string name="updates">Updates</string>
+    <string name="Noupdates">No updates available for now</string>
+    <string name="rewards">Rewards</string>
+    <string name="rewardsPoint">Please invite and share\nto get the Rewards points</string>
+    <string name="redeemPoints">Redeem Points</string>
+    <string name="title_activity_my_workouts">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="myexercises">My Exercises</string>
+    <string name="mynutrition">My Nutrition</string>
+    <string name="facebook">Facebook</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="messages">Messages</string>
+    <string name="skip">Skip</string>
+    <string name="googlePlus">G Plus</string>
+    <string name="shares">Share and Invite</string>
+</resources>

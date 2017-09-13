@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.eatfit.activity.Home">
+
+    <RelativeLayout
+        android:id="@+id/fragment_space"
+        android:name="com.presence.fragments.HomeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_lay"/>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:elevation="@dimen/dp_2"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/tab_profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/image_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/text_profile"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/profile_green"/>
+
+            <TextView
+                android:id="@+id/text_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/profile"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_10"/>
+        </RelativeLayout>
+
+        <!--      <RelativeLayout
+                  android:id="@+id/tab_regimen"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:visibility="gone">
+
+                  <ImageView
+                      android:id="@+id/image_regimen"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_above="@+id/text_regimen"
+                      android:layout_centerHorizontal="true"
+                      android:src="@mipmap/regimen" />
+
+                  <TextView
+                      android:id="@+id/text_regimen"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentBottom="true"
+                      android:layout_centerHorizontal="true"
+                      android:text="@string/regimen"
+                      android:textColor="@color/black"
+                      android:textSize="@dimen/sp_10" />
+              </RelativeLayout>
+      -->
+        <RelativeLayout
+            android:id="@+id/tab_nutrition"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/image_nutrition"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/text_nutrition"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/nutrition"/>
+
+            <TextView
+                android:id="@+id/text_nutrition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/nutrition"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_10"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tab_workout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/image_workout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/text_workout"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/workout"/>
+
+            <TextView
+                android:id="@+id/text_workout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/workouts"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_10"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tab_feeds"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/image_feeds"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/text_feeds"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/feed"/>
+
+            <TextView
+                android:id="@+id/text_feeds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/feed"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_10"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolBarStyle">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:padding="@dimen/dp_5"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_22"/>
+
+                <RelativeLayout
+                    android:id="@+id/notificationLay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_5">
+
+                    <ImageView
+                        android:id="@+id/notification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp_2.5"
+                        android:src="@mipmap/notification"/>
+
+                    <ImageView
+                        android:id="@+id/notify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/notification"
+                        android:padding="@dimen/dp_3"
+                        android:src="@drawable/counter_bg"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/upperPanelFeed"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_2.5"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dp_7.5"
+    android:paddingRight="@dimen/dp_7.5"
+    android:weightSum="1">
+
+    <com.eatfit.helper.CircleImageView
+        android:id="@+id/userCommentImage"
+        android:layout_width="@dimen/dp_45"
+        android:layout_height="@dimen/dp_45"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/profile_blue"
+        app:civ_border_color="@color/bluebg"
+        app:civ_border_overlay="false"
+        app:civ_border_width="@dimen/dp_1" />
+
+
+    <RelativeLayout
+        android:id="@+id/textLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_2"
+        android:layout_marginTop="@dimen/dp_2"
+        android:layout_toRightOf="@+id/userCommentImage"
+        android:padding="@dimen/dp_2">
+
+        <TextView
+            android:id="@+id/userCommentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="sdgsadgdg"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/userCommentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userCommentName"
+            android:layout_marginTop="@dimen/dp_2.5"
+            android:text="sdgasdgvadgasdg"
+            android:textSize="@dimen/sp_14" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textLayout"
+        android:layout_marginTop="@dimen/dp_7.5"
+        android:layout_toRightOf="@+id/userCommentImage"
+        android:background="@color/signup_textColor" />
+
+</RelativeLayout>

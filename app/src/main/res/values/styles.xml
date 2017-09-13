@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="ToolBarStyle_primary" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorSecondary">@color/colorBlack</item>
+    </style>
+
+    <style name="MySwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/greenbg</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/colorWhite</item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">@color/login_textColor</item>
+    </style>
+
+    <style name="MyEditTextTheme" parent="@style/Widget.AppCompat.EditText">
+        <item name="colorControlNormal">@color/bluebg</item>
+        <item name="colorControlActivated">@color/bluebg</item>
+        <item name="colorControlHighlight">@color/bluebg</item>
+    </style>
+
+    <style name="SignUpEditTextTheme" parent="@style/Widget.AppCompat.EditText">
+        <item name="colorControlNormal">@color/login_textColor</item>
+        <item name="colorControlActivated">@color/bluebg</item>
+        <item name="colorControlHighlight">@color/bluebg</item>
+    </style>
+
+    <style name="ToolBarStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorSecondary">@color/black</item>
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+    </style>
+
+    <style name="CustomTabTheme" parent="Widget.Design.TabLayout">
+        <item name="textAllCaps">false</item>
+        <item name="android:dividerPadding">3dp</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="CalenderViewCustom" parent="Theme.AppCompat">
+        <item name="colorAccent">@color/colorWhite</item>
+    </style>
+
+    <style name="CalenderViewDateCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:focusedMonthDateColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="CalenderViewWeekCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+
+</resources>

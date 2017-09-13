@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "672852015520",
+    "firebase_url": "https://eat-fit-340d5.firebaseio.com",
+    "project_id": "eat-fit-340d5",
+    "storage_bucket": "eat-fit-340d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672852015520:android:f6cfea12e2fc4078",
+        "android_client_info": {
+          "package_name": "com.eatfit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "672852015520-61bb4qn0n1su6hif026m720oe3285nrm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.eatfit",
+            "certificate_hash": "ca5a9b4723be1071775222251a964bf0407ed4b2"
+          }
+        },
+        {
+          "client_id": "672852015520-g0sfn1k9rtd2qh6sh5hfphe325ijeggq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYJwLbcVlc5gCkrYaGJ-vb0KNEnoIhgtU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "672852015520-g0sfn1k9rtd2qh6sh5hfphe325ijeggq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "672852015520-7kass1cmscsa88fs73vhcj9om6r49ps5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.appsquadz.EATFIT"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

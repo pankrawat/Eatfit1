@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.eatfit.activity.MyRegimen">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/upperBg"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:adjustViewBounds="true"
+            android:background="@mipmap/header_bg_01"/>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolBarStyle_primary">
+
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/dp_5"
+                android:text="Nutrition"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_22"/>
+        </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="My Regimen"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_18"
+        android:textStyle="italic"/>
+
+
+    <View
+        android:id="@+id/layLine"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignRight="@+id/title"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="@dimen/dp_2"
+        android:background="@color/bluebg"/>
+
+
+    <com.imanoweb.calendarview.CustomCalendarView
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layLine"
+        android:layout_marginTop="@dimen/dp_30"
+        app:calendarBackgroundColor="@color/black"
+        app:calendarTitleTextColor="@color/colorWhite"
+        app:currentDayOfMonthColor="@color/bluebg"
+        app:dayOfMonthTextColor="@color/white"
+        app:dayOfWeekTextColor="@color/colorWhite"
+        app:disabledDayBackgroundColor="@color/greyed_out"
+        app:disabledDayTextColor="@color/greyed_out"
+        app:selectedDayBackgroundColor="@android:color/transparent"
+        app:titleLayoutBackgroundColor="@color/black"
+        app:weekLayoutBackgroundColor="@color/lightBlack"/>
+
+</RelativeLayout>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.eatfit.activity.VideoScreen">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolBarStyle_primary">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back" />
+
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/dp_5"
+                android:text="Beginners Videos"
+                android:textAllCaps="false"
+                android:textColor="@color/signup_textColor"
+                android:textSize="@dimen/sp_22" />
+
+        </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtube_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_220"
+        android:layout_below="@+id/header"
+        android:background="#ebeff2" />
+
+    <LinearLayout
+        android:id="@+id/infoPanel"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/youtube_player_view"
+        android:layout_marginLeft="@dimen/dp_2.5"
+        android:layout_marginRight="@dimen/dp_2.5"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/titlePanel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_5">
+
+            <TextView
+                android:id="@+id/titleVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Fitness Video"
+                android:textColor="@color/signup_textColor"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/subTitleVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleVideo"
+                android:text="Fitness Videossss"
+                android:textColor="@color/signup_textColor"
+                android:textSize="@dimen/sp_14" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/likePanel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/likeIcon"
+                android:layout_width="@dimen/dp_35"
+                android:layout_height="@dimen/dp_35"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/dp_5"
+                android:src="@mipmap/liken" />
+
+            <TextView
+                android:id="@+id/likeVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/likeIcon"
+                android:layout_centerHorizontal="true"
+                android:text="@string/like"
+                android:textColor="@color/signup_textColor"
+                android:textSize="@dimen/sp_11" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/sharePanel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/shareIcon"
+                android:layout_width="@dimen/dp_35"
+                android:layout_height="@dimen/dp_35"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/dp_5"
+                android:src="@mipmap/sharen" />
+
+            <TextView
+                android:id="@+id/shareVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shareIcon"
+                android:layout_centerHorizontal="true"
+                android:text="@string/share"
+                android:textColor="@color/signup_textColor"
+                android:textSize="@dimen/sp_11" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/addPanel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/addIcon"
+                android:layout_width="@dimen/dp_35"
+                android:layout_height="@dimen/dp_35"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/dp_5"
+                android:src="@mipmap/plus" />
+
+            <TextView
+                android:id="@+id/addVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addIcon"
+                android:layout_centerHorizontal="true"
+                android:text="@string/Add"
+                android:textColor="@color/signup_textColor"
+                android:textSize="@dimen/sp_11" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/separatorLine"
+        android:layout_width="match_parent"
+        android:layout_height=".7dp"
+        android:layout_below="@id/infoPanel"
+        android:layout_marginBottom="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_2.5"
+        android:background="@color/signup_textColor" />
+
+    <LinearLayout
+        android:id="@+id/youtubeChannelNameInfo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_below="@id/separatorLine"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_5"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/channelImage"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center_vertical"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/image_02" />
+
+        <RelativeLayout
+            android:id="@+id/channelInfo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_5">
+
+            <TextView
+                android:id="@+id/titleChanel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="Published on Feb 23, 2017"
+                android:textColor="@color/signup_textColor"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/subtitleChanel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleChanel"
+                android:maxLines="1"
+                android:text="The body building - cutler"
+                android:textColor="@color/signup_textColor"
+                android:textSize="@dimen/sp_11" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/expandImage"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/dp_7.5"
+            android:src="@mipmap/dropdown" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/descriptionChanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/youtubeChannelNameInfo"
+        android:layout_marginLeft="@dimen/dp_2.5"
+        android:padding="@dimen/dp_5"
+        android:text=""
+        android:textColor="@color/signup_textColor"
+        android:textSize="@dimen/sp_12"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/nextChanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descriptionChanel"
+        android:layout_marginLeft="@dimen/dp_2.5"
+        android:padding="@dimen/dp_5"
+        android:text="@string/next"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_18" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/nextVideoList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nextChanel"
+        android:layout_marginTop="@dimen/dp_5"
+        android:paddingLeft="@dimen/dp_5"
+        android:paddingRight="@dimen/dp_5" />
+
+</RelativeLayout>
